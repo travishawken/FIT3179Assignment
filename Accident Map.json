@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 600,
-  "height": 400,
-  "title": "Car Accidents in Victoria 2018",
+  "width": 800,
+  "height": 500,
+  "title": "Accident Locations",
   "projection": {"type": "equirectangular"},
   "layer": [
     {
@@ -11,7 +11,7 @@
         "format": {"type": "topojson", "feature": "AusVicPoly60"}
       },
       "projection": {"type": "equirectangular"},
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "black", "stroke": "white"}
     },
     {
       "data": {
@@ -22,8 +22,8 @@
       "encoding": {
         "longitude": {"field": "LONGITUDE", "type": "quantitative"},
         "latitude": {"field": "LATITUDE", "type": "quantitative"},
-        "size": {"value": 10},
-        "color": {"value": "steelblue"},
+        "size": {"value": 5},
+        "color": {"value": "#ffa64d"},
         "tooltip": [{"field": "OBJECTID"}]
       }
     }
