@@ -41,8 +41,8 @@
   "transform": [
     {"filter": "ACCIDENT_TYPE == null || datum.ACCIDENT_TYPE == ACCIDENT_TYPE"}
   ],
-  "width": 425,
-  "height": 425,
+  "width": 400,
+  "height": 200,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
