@@ -4,7 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/travishawken/FIT3179/master/Vic_Crashes_2018.csv"
   },
-  "title":"Accidents by Day of Week and Accident Type"
+  "title":"Accidents by Day of Week and Accident Type",
   "params": [
     {
       "name": "ACCIDENT_TYPE",
