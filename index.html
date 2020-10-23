@@ -142,7 +142,7 @@
           </div>
          </div>
        <div class="pure-u-1-2">
-          
+          <div id="vis7" class="vis-container"></div>
        </div>
     </div>
                                
@@ -203,6 +203,7 @@
   var specVis4= "bolte2016.json";
   var specVis5= "bolte2017.json";
   var specVis6= "bolte2018.json";
+  var specVis7= "choro3.json";
           
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -220,6 +221,9 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   vegaEmbed('#vis6', specVis6, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  vegaEmbed('#vis7', specVis7, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
