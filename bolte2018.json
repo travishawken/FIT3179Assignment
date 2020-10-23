@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "height": 600,
+  "title": "2018",
+  "projection": {"type": "equirectangular"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/travishawken/FIT3179Assignment/main/TR_ROAD-4.json",
+        "format": {"type": "topojson", "feature": "TR_ROAD"}
+      },
+      "projection": {"type": "equirectangular"},
+      "mark": {"type": "geoshape", "fill": "white", "stroke": "black"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/travishawken/FIT3179Assignment/main/2018.csv"
+      },
+      "projection": {"type": "equirectangular"},
+      "mark": "circle",
+      "encoding": {
+        "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+        "latitude": {"field": "LATITUDE", "type": "quantitative"},
+        "size": {"value": 250},
+        "color": {"value": "#ffa64d"},
+        "tooltip": [{"field": "OBJECTID"}]
+      }
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}
