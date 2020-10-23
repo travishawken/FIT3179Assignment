@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "height": 400,
+  "title": "Accidents by Type 2018",
+  "data": {
+    "url": "https://raw.githubusercontent.com/travishawken/FIT3179/master/Vic_Crashes_2018.csv"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "ACCIDENT_DATE",
+      "title": "Month (2018)"
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "ACCIDENT_DATE",
+      "scale": {"domain": [0, 1100]},
+      "title": "Accidents"
+    },
+    "color": {
+      "field": "ACCIDENT_TYPE",
+      "scale": {"scheme": "tableau10"},
+      "title": "Accident Type"
+    },
+    "tooltip": [
+      {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Accident Type"},
+      {
+        "aggregate": "count",
+        "field": "ACCIDENT_DATE",
+        "type": "nominal",
+        "title": "Accidents"
+      },
+      {"timeUnit": "month", "field": "ACCIDENT_DATE", "title": "Month"}
+    ]
+  },
+  "config": {}
+}
