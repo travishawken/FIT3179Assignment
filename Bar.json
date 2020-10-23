@@ -1,7 +1,10 @@
+
+
 {
   "data": {
     "url": "https://raw.githubusercontent.com/travishawken/FIT3179/master/Vic_Crashes_2018.csv"
   },
+  "title":"Accidents by Day of Week and Accident Type"
   "params": [
     {
       "name": "ACCIDENT_TYPE",
@@ -38,8 +41,8 @@
   "transform": [
     {"filter": "ACCIDENT_TYPE == null || datum.ACCIDENT_TYPE == ACCIDENT_TYPE"}
   ],
-  "width": 300,
-  "height": 300,
+  "width": 425,
+  "height": 425,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
@@ -53,6 +56,7 @@
     {
       "mark": "bar",
       "encoding": {
+        "color": {"value": "#ffa64d"},
         "tooltip": [
           {
             "aggregate": "count",
