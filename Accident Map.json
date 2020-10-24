@@ -14,7 +14,7 @@
         "format": {"type": "topojson", "feature": "AusVicPoly60"}
       },
       "projection": {"type": "equirectangular"},
-      "mark": {"type": "geoshape", "fill": "black", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "black", "stroke": "black"}
     },
     {
       "data": {
