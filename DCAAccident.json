@@ -1,0 +1,55 @@
+{
+  "data": {
+    "url": "https://raw.githubusercontent.com/travishawken/FIT3179Assignment/main/DCACodeTop10.csv"
+  },
+  "title": "Accidents by Day of Week and Accident Type",
+  "params": [
+    {
+      "name": "ALCOHOL_RELATED",
+      "bind": {
+        "input": "select",
+        "options": [null, "Yes", "No"],
+        "labels": ["Show All", "Yes", "No"],
+        "name": "Alcohol Related: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "ALCOHOL_RELATED == null || datum.ALCOHOL_RELATED == ALCOHOL_RELATED"
+    }
+  ],
+  "width": 800,
+  "height": 300,
+  "encoding": {
+    "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
+    "x": {
+      "field": "DCA_CODE",
+      "title": "DCA Code",
+      "type": "nominal",
+      "sort": "-y"
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {"field": "SEVERITY"},
+        "tooltip": [
+          {
+            "aggregate": "count",
+            "field": "ACCIDENT_DATE",
+            "type": "nominal",
+            "title": "Accidents"
+          },
+          {"field": "DCA_CODE", "title": "DCA Code"},
+          {"field": "SEVERITY", "title": "Severity"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "legend": {"orient": "bottom"}
+  }
+}
