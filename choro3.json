@@ -26,7 +26,8 @@
       "field": "Rate",
       "type": "quantitative",
       "scale": {"scheme": "oranges"}
-    }
+    },
+    "tooltip": [{"field": "properties.ABB_NAME", "title":"Local Gov Area"},{"field": "Rate"}]
   },
   "config": {
   
