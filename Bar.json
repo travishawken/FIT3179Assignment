@@ -34,7 +34,7 @@
           "Struck Pedestrian",
           "Vehicle overturned (no collision)"
         ],
-        "name": "Accident Type Selection"
+        "name": "Accident Type Selection: "
       }
     }
   ],
@@ -42,7 +42,7 @@
     {"filter": "ACCIDENT_TYPE == null || datum.ACCIDENT_TYPE == ACCIDENT_TYPE"}
   ],
   "width": 400,
-  "height": 200,
+  "height": 300,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
