@@ -28,5 +28,11 @@
       "scale": {"scheme": "oranges"}
     }
   },
-  "config": {}
+  "config": {
+  
+   "style": {
+    "cell": {
+      "stroke": "transparent"
+    }
+  }}
 }
