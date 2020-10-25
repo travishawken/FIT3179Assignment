@@ -2,7 +2,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/travishawken/FIT3179Assignment/main/DCACodeTop10.csv"
   },
-  "title": "Accidents by Day of Week and Accident Type",
+  "title": "Accidents by DCA Code",
   "params": [
     {
       "name": "ALCOHOL_RELATED",
