@@ -27,7 +27,9 @@
       "field": "DCA_CODE",
       "title": "DCA Code",
       "type": "nominal",
-      "sort": "-y"
+      "sort": "-y",
+      "axis": {
+        "labelAngle": -45}
     }
   },
   "layer": [
