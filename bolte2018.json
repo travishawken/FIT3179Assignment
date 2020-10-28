@@ -2,7 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 290,
   "height": 400,
-  "title": "2018",
+  "title":{
+    "text":"2018",
+    "fontSize":17},
   "projection": {"type": "equirectangular"},
   "layer": [
     {
