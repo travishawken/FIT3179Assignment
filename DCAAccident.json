@@ -2,7 +2,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/travishawken/FIT3179Assignment/main/DCACodeTop10.csv"
   },
-  "title": "Accidents by DCA Code",
+  "title":{
+    "text":"Accidents by DCA Code",
+  "fontSize":20},
   "params": [
     {
       "name": "ALCOHOL_RELATED",
@@ -20,7 +22,7 @@
     }
   ],
   "width": 900,
-  "height": 500,
+  "height": 700,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
@@ -29,7 +31,8 @@
       "type": "nominal",
       "sort": "-y",
       "axis": {
-        "labelAngle": -45}
+        "labelAngle": -45,
+        "labelBound":"false"}
     }
   },
   "layer": [
