@@ -4,7 +4,7 @@
   },
   "title":{
     "text":"Accidents by DCA Code",
-  "fontSize":20},
+  "fontSize":17},
   "params": [
     {
       "name": "ALCOHOL_RELATED",
@@ -22,7 +22,7 @@
     }
   ],
   "width": 900,
-  "height": 700,
+  "height": 550,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
