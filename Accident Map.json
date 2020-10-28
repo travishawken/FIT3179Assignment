@@ -4,7 +4,8 @@
   "height": 600,
   "title": {
     "text": "Accident Locations 2018",
-    "orient": "bottom"
+    "orient": "bottom",
+    "fontSize":17
   },
   "projection": {"type": "equirectangular"},
   "layer": [
