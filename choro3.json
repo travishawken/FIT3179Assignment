@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Car Accidents by Local Government Area Normalised by population 2018",
+  "title": {
+    "text":"Car Accidents by Local Government Area Normalised by population 2018",
+    "fontSize":17},
   "width": 440,
   "height": 330,
   "projection": {"type": "equirectangular"},
