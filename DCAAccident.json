@@ -19,8 +19,8 @@
       "filter": "ALCOHOL_RELATED == null || datum.ALCOHOL_RELATED == ALCOHOL_RELATED"
     }
   ],
-  "width": 800,
-  "height": 300,
+  "width": 900,
+  "height": 500,
   "encoding": {
     "y": {"aggregate": "count", "field": "ACCIDENT_DATE", "title": "Accidents"},
     "x": {
